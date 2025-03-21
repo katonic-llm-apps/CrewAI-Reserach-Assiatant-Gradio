@@ -16,30 +16,42 @@ This is a Gradio-based web application that demonstrates the capabilities of Cre
   - Model selection (GPT-4o, GPT-4-turbo, GPT-3.5-turbo)
 
 
-## Usage
+## 📋 Requirements
 
-1. Run the application:
-   ```
-   python app.py
-   ```
+- Python >=3.10 and <3.13
+- OpenAI API key or GROQ API key
+- Exa API key
+- Streamlit
 
-2. Open your web browser and navigate to the URL displayed in the terminal (typically http://127.0.0.1:7860).
+## 🚀 Getting Started
 
-3. In the app:
-   - Enter your OpenAI API key (if not provided in the `.env` file)
-   - Select the model and set the temperature
-   - Choose the process type (Sequential or Hierarchical)
-   - Enter a research topic
-   - Select the content type and tone
-   - Click "Run CrewAI" to generate the content
+1. Create and activate a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
+```
 
-## Understanding the Process Types
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-- **Sequential Process**: Agents work one after another, with the output of one agent serving as input for the next.
-- **Hierarchical Process**: Agents work in a hierarchical structure, with some agents delegating tasks to others.
+3. Run the application:
+```bash
+gradio run app.py
+```
 
-## Requirements
+## 🔑 API Keys Setup
 
-- Python 3.8+
-- An OpenAI API key with access to the models you want to use
+The application requires the following API keys:
+
+1. **OpenAI API Key** or **GROQ API Key**
+   - For OpenAI: Get it from [OpenAI Platform](https://platform.openai.com/)
+   - For GROQ: Get it from [GROQ Console](https://console.groq.com/)
+
+2. **Exa API Key**
+   - Get it from [Exa](https://exa.ai)
+
+Enter these keys in the sidebar of the application when prompted.
+
 
